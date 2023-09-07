@@ -1,2 +1,2 @@
 # practice
-learning practices
+Here are some course works and learning practices.
