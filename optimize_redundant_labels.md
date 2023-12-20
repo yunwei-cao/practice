@@ -163,6 +163,7 @@ outcome of an instance is 4:4, then it belongs to the most uncertain ones. If th
 an instance is 0 :8 or 8:0, then it belongs to the least uncertain ones.
 
 2.2 Implementation and Interpretation
+![image](https://github.com/yunwei-cao/practice/assets/107632477/2ca4a732-7e28-4da0-9576-80bc216df075)
 
 From results of cross validation, we can infer that a4 has the poorest performance, which the
 accuracy is the lowest and not consistent in n1 and n2. Both a3 and a7 have the best
