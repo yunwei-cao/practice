@@ -198,7 +198,6 @@ well fit for this topic, for the indicator generated from annotators are not pro
 
 (Original Workshop Paper: https://dl.acm.org/doi/10.1145/1837885.1837906)
 
-
 3.2 Implementation
 Basically, what I did is following the instructions of this open sources.
 
@@ -254,6 +253,8 @@ Alternatively, if we assume a more strategic spammer, we can set as baseline the
 expected cost of a worker that always assigns the same label, and this label
 assignment results in the minimum expected cost.
 
+![image](https://github.com/yunwei-cao/practice/assets/107632477/af2fec27-3f3b-4a0c-9f71-2cc676ed1ed7)
+
 I marked positive as 1 and negative as -1 for easy view. From the workers’
 statistic above, we could infer that a3 and a7 are relatively reliable workers. Worker a1 is not
 good at finding negative labels while a2 is not good at finding positive labels. Workers a5 and
@@ -262,16 +263,7 @@ reliable and a8 tends to mark the most as negative.
 
 # Part 2 Data Test Results
 
-Final Accuracy
-naïve Bayes | logistic | regression SVM
-
-method1 majority vote 0.686 0.712 0.69
-
-method2 cross validation 0.688 0.724 0.711
-
-method2 cross validation + instance weighting 0.712 0.725 0.695
-
-method3 EM algorithm 0.714 0.733 0.699
+![image](https://github.com/yunwei-cao/practice/assets/107632477/3e9ddc56-239e-4bfb-84cc-598db4c48d29)
 
 1. The confusion Matrix excel table of each scenario are attached with this homework. Well, my first thought is there is basically no difference and I started to doubt if it is meaningful for me to pursue the data science path and drown in the statistic field ...
 2. Vertically speaking, it seems that the latter two is slightly better than the simple majority vote strategy. I think it is because I tried to evaluate the workers’ quality more precisely so the weights assigned to them are fine-tuned, which could change a few of labels to the true right class in training data (majority vote is not always right).
